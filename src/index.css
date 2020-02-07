@@ -1,0 +1,91 @@
+body {
+  font: 18px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 45px;
+  height: 45px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 45px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+/* Minhas alterações */
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+/* #root {
+  width: 50%;
+  margin: auto;
+} */
+
+.github-profile{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: middle;
+  height: 50%;
+  margin-left: 1em;
+}
+
+.company {
+  height: 50%;
+  margin-left: 1em;
+}
+
+.user-img {
+  width: 75px;
+}
+
+form {
+  border: 1px black solid;
+  padding: 2em;
+  margin-bottom: 20px;
+  align-items: center;
+}
