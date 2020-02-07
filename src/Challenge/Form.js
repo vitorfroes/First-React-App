@@ -10,7 +10,9 @@ class Form extends Component {
 
         let resp = await fetch(`https://api.github.com/users/${this.state.userName}`, {mode: 'cors'});
 
-        console.log(resp);
+        console.log(resp.body);
+
+        this.props.onSubmit(resp.data);
     }
 
     render() {
